@@ -1,0 +1,3 @@
+# GLOBAL ADMINISTRATIVE AREAS SERVER APP
+
+Boundaries without limits

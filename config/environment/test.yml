@@ -1,0 +1,31 @@
+database:
+  host:
+  port: 5432
+  engine: postgresql+psycopg2
+  database: gaa_test
+  username:
+  password:
+  encoding: utf-8
+  # Set pool_size to a setting larger than number of expected threads
+  # but less than max allowed clients
+  pool_size: 20
+  # Set max pool size overflow
+  max_overflow: 0
+  # Print sqls statements as they occur
+  echo: false
+  # Set paramstyle to format to fix bug with sqlalchemy, mysql-connector, and
+  # insert many
+  # http://stackoverflow.com/questions/13201498/sqlalchemy-error-inserting-multiple-objects
+  paramstyle: format
+
+sentry_dsn: ''
+
+app_secret: 'xxx'
+
+# mail:
+#   server: localhost
+#   port: 25
+#   tls: false
+#   ssl: false
+#   username:
+#   password:
