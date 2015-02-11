@@ -39,7 +39,7 @@ cache_dir = configuration.get('cache_dir') or relative_filepath('./cache')
 PATH_SUB_DIR = environment == 'production' and 'dist' or 'app'
 
 PROJECT_ROOT = os.path.abspath(os.path.split(__file__)[0])
-TEMPLATE_FOLDER = get_template_folder(app_subdomain)
+TEMPLATE_FOLDER = get_template_folder('www')
 STATIC_URL_PATH = ''
 STATIC_FOLDER = TEMPLATE_FOLDER
 CACHE_TIMEOUT = 60 * 60 * 24

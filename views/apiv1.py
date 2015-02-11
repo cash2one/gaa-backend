@@ -51,7 +51,7 @@ def configure_views(app, limiter):
 
     # API documentation
     RE_API_DOCS_BASE_PATH = re.compile(r'"basePath": "(.*)\/api\/')
-    API_URL = '"basePath": "http://www.gaa.com/api/'
+    API_URL = '"basePath": "%s/api/'.format(config.virtual_host)
 
 
     @app.route('/api/v1/api-docs', methods=['GET'])
